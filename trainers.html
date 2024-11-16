@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS link -->
+    
+    <style>
+        .card {
+            width: 18rem; /* Fixed card width */
+            margin: 10px; /* Space between cards */
+        }
+        .card-img-top {
+            height: 200px; /* Fixed image height */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+        /* Create two rows of 3 cards */
+        .card-deck {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+            gap: 20px; /* Space between cards */
+        }
+        .custom-card-height {
+    height: 200px; /* Adjust to desired height */
+}
+
+    </style>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- Navbar content -->
+        <div class="container" >
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+      
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                <li><a href="trainers.html" class="nav-link px-2 text-white">Trainers</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li><a href="experience.html" class="nav-link px-2 text-white">Experiences</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+              </ul>
+      
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+              </form>
+      
+              <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">Login</button>
+                <button type="button" class="btn btn-warning">Sign-up</button>
+              </div>
+            </div>
+          </div>
+      </nav>
+
+
+
+      <!-- trainers -->
+      <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative custom-card-height">
+
+            <div class="col p-4 d-flex flex-column position-static">
+              <h4 class="mb-0">Devika</h4>
+              <div class="mb-1 text-body-secondary">Experience : 4years</div>
+              <p class="card-text mb-auto">Devika is a free-spirited girl from India who loves to practice yoga. She is kind, compassionate, and has a strong sense of self. Her love for yoga has helped her find inner peace and balance in life.</p>
+             
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img src="trainers/trainer1.webp" class="card-img-top" alt="Yoga Pose">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative custom-card-height">
+
+            <div class="col p-4 d-flex flex-column position-static">
+                <h4 class="mb-0">Gauri</h4>
+                <div class="mb-1 text-body-secondary">Experience : 6years</div>
+                <p class="card-text mb-auto">Gauri is a young Indian girl who is deeply passionate about yoga and its benefits. She is a natural leader and has a calm and patient demeanor. </p>
+                
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                  <img src="trainers/trainer2.webp" class="card-img-top" alt="Yoga Pose">
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative custom-card-height">
+
+            <div class="col p-4 d-flex flex-column position-static">
+                <h4 class="mb-0">James Riley
+                </h4>
+                <div class="mb-1 text-body-secondary">Experience : 3years</div>
+                <p class="card-text mb-auto">James is a laid-back and easygoing yoga trainer from America. He has a calming presence and is known for his positive and optimistic attitude. </p>
+                
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                  <img src="trainers/trainer3.webp" class="card-img-top" alt="Yoga Pose">
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative custom-card-height">
+
+            <div class="col p-4 d-flex flex-column position-static">
+                <h4 class="mb-0">Kaito Nakamura
+                </h4>
+                <div class="mb-1 text-body-secondary">Experience : 6years</div>
+                <p class="card-text mb-auto">Kaito Nakamura is a calm and disciplined young man, with a strong sense of self and a deep connection to his Japanese heritage.</p>
+               
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                  <img src="trainers/trainer4.webp" class="card-img-top" alt="Yoga Pose">
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative custom-card-height">
+
+            <div class="col p-4 d-flex flex-column position-static">
+                <h4 class="mb-0">Anusha Reddy
+                </h4>
+                <div class="mb-1 text-body-secondary">Experience : 8years</div>
+                <p class="card-text mb-auto">Anusha Reddy is a Telugu person who is passionate about yoga and spirituality. She is a kind and compassionate girl who loves to help others.</p>
+               
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                  <img src="trainers/trainer5.webp" class="card-img-top" alt="Yoga Pose">
+  
+              </div>
+            </div>
+          </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative custom-card-height">
+
+            <div class="col p-4 d-flex flex-column position-static">
+              <h4 class="mb-0">Rahul Khanna</h4>
+              <div class="mb-1 text-body-secondary">Experience : 1years</div>
+              <p class="mb-auto">Rahul is a young boy in his early twenties, who is passionate about fitness and bodybuilding. He is a determined and hardworking individual who is always looking to improve himself.</p>
+             
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img src="trainers/trainer6.webp" class="card-img-top" alt="Yoga Pose">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 YogaVeda , Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><img src="icons/facebook.png" class="bi" width="24" height="24" style="margin: 1rem;"></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/satvic.yoga/"><img src="icons/insta.png" class="bi" width="24" height="24" style="margin: 1rem;"></a></li>
+
+            <li class="ms-3"><a class="text-body-secondary" href="#"><img src="icons/linkedin.svg" class="bi" width="24" height="24" style="margin: 1rem;"></a></li>
+
+          </ul>
+        </footer>
+      </div>
+</body>

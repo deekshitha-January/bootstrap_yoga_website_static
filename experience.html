@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .heading{
+            background-color: rgb(213, 244, 167);
+            height: 150px;
+        }
+        .heading{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+   
+        .container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap when the container size is reduced */
+    justify-content: space-between; /* Distributes items evenly */
+    gap: 20px; /* Adds space between the items */
+}
+
+.experience-item {
+    flex: 1 1 calc(33.33% - 20px); /* Each item will take up 1/3 of the width minus the gap */
+    max-width: calc(33.33% - 20px); /* Ensures that the items don't grow too wide */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    text-align: center; /* Centers the content */
+    padding: 20px; /* Optional: adds spacing inside the items */
+}
+
+@media (max-width: 768px) {
+    .experience-item {
+        flex: 1 1 calc(50% - 20px); /* Items take up half of the width on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-item {
+        flex: 1 1 100%; /* Items take up full width on small screens */
+    }
+}
+
+    </style>
+
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- Navbar content -->
+        <div class="container" >
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+      
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                <li><a href="trainers.html" class="nav-link px-2 text-white">Trainers</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Experiences</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+              </ul>
+      
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+              </form>
+      
+               <div class="text-end">
+                
+                <a href="login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+                <a href="signup.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
+              </div> 
+           
+            </div>
+          </div>
+      </nav>
+
+   <div>
+     <div class="heading">
+        <div class="experience">
+            <p>Experiences of growth, balance, and wellness shared by those who embarked on their yoga journey with us</p>
+        </div>
+    </div>
+    
+<div class="container">
+    <div class="experience-item">
+        <img src="experiences/oldman.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        <h2 class="fw-normal">Mustaffa</h2>
+        <p>Yoga has been a refuge for my mind. The guided meditation and breathing practices gave me the calm I needed to deal with life’s challenges.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+    </div>
+
+    <div class="experience-item">
+        <img src="experiences/woman.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        <h2 class="fw-normal">Indhu</h2>
+        <p>Using yoga during my pregnancy helped me stay healthy and relaxed. The prenatal sessions made me feel confident and prepared for childbirth.</p>
+    </div>
+
+    <div class="experience-item">
+        <img src="experiences/japanese.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        <h2 class="fw-normal">Shizuka</h2>
+        <p>Yoga made a huge difference in my skin. The facial yoga exercises helped reduce puffiness and improved my circulation, leaving me with a natural glow.</p>
+    </div>
+
+    <div class="experience-item">
+        <img src="experiences/youngboy.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        <h2 class="fw-normal">Kim</h2>
+        <p>Yoga improved my flexibility like I never imagined. The step-by-step instructions helped me unlock deeper stretches and move more fluidly.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 YogaVeda , Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><img src="icons/facebook.png" class="bi" width="24" height="24" style="margin: 1rem;"></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/satvic.yoga/"><img src="icons/insta.png" class="bi" width="24" height="24" style="margin: 1rem;"></a></li>
+
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/groups/42210/"><img src="icons/linkedin.svg" class="bi" width="24" height="24" style="margin: 1rem;"></a></li>
+
+      </ul>
+    </footer>
+  </div>
+
+
+
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
